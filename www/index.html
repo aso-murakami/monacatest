@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ユーザー登録</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ユーザー登録</h1>
+      <form>
+        <label for="username">ユーザー名:</label>
+        <input type="text" id="username" name="username" required /><br />
+
+        <label for="password">パスワード:</label>
+        <!-- 入力するたびにチェックする関数を呼び出す -->
+        <input type="password" id="password" name="password" required /><br />
+
+        <label for="confirmPassword">パスワード再入力:</label>
+        <!-- 入力するたびにチェックする関数を呼び出す -->
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+        /><br />
+
+        <span id="message">一致していません</span><br />
+
+        <button type="submit" id="registerButton" disabled>ユーザー登録</button>
+      </form>
+    </div>
+  </body>
+</html>
